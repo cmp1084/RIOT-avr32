@@ -23,6 +23,7 @@
 
 #include <stdio.h>
 #include <inttypes.h>
+//~ #include "stdatomic.h"
 
 #include "rmutex.h"
 #include "thread.h"

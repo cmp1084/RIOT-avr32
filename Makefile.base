@@ -103,6 +103,7 @@ $(OBJC_LTO): CFLAGS+=$(LTOFLAGS)
 # Define dependencies for object files
 OBJ_DEPS += $(RIOTBUILD_CONFIG_HEADER_C)
 
+#CC must be avr32-$(CC) here //TODO: Remove comment. Mjan 202010016
 $(OBJC): $(BINDIR)/$(MODULE)/%.o: %.c $(OBJ_DEPS) | $(if $(SHOULD_RUN_KCONFIG),$(KCONFIG_GENERATED_AUTOCONF_HEADER_C))
 	$(Q)$(CCACHE) $(CC) \
 		-DRIOT_FILE_RELATIVE=\"$(patsubst $(RIOTBASE)/%,%,$(abspath $<))\" \

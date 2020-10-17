@@ -1,0 +1,4 @@
+# static C++ constructors need guards for thread safe initialization
+ifneq (,$(filter cpp,$(FEATURES_USED)))
+  USEMODULE += cxx_ctor_guards
+endif

@@ -261,6 +261,12 @@ TEMPLATE_ATOMIC_OP_FETCH_N(nand, &, 8, ~) /* __atomic_nand_fetch_8 */
 
 /* ***** Generic versions below ***** */
 
+#ifdef CPU_AVR32
+#define __atomic_load_c __atomic_load
+#define __atomic_store_c __atomic_store
+#define __atomic_exchange_c __atomic_exchange
+#define __atomic_compare_exchange_c __atomic_compare_exchange
+#else
 /* Clang objects if you redefine a builtin.  This little hack allows us to
  * define a function with the same name as an intrinsic. */
 /* Hack origin: http://llvm.org/svn/llvm-project/compiler-rt/trunk/lib/builtins/atomic.c */
@@ -268,6 +274,7 @@ TEMPLATE_ATOMIC_OP_FETCH_N(nand, &, 8, ~) /* __atomic_nand_fetch_8 */
 #pragma redefine_extname __atomic_store_c __atomic_store
 #pragma redefine_extname __atomic_exchange_c __atomic_exchange
 #pragma redefine_extname __atomic_compare_exchange_c __atomic_compare_exchange
+#endif
 
 /**
  * @brief Atomic generic load

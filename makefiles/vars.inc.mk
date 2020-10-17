@@ -53,7 +53,7 @@ export FEATURES_USED         # List of features used
 # TOOLCHAINS_BLACKLISTED     # List of unspported toolchains for a module or an application.
 export TOOLCHAIN             # Base build toolchain, i.e. GNU or LLVM
 
-export TARGET_ARCH           # The target platform name, in GCC triple notation, e.g. "arm-none-eabi", "i686-elf", "avr"
+export TARGET_ARCH           # The target platform name, in GCC triple notation, e.g. "arm-none-eabi", "i686-elf", "avr", "avr32"
 export PREFIX                # The prefix of the toolchain commands, usually "$(TARGET_ARCH)-", e.g. "arm-none-eabi-" or "msp430-".
 export CC                    # The C compiler to use.
 export CXX                   # The CXX compiler to use.

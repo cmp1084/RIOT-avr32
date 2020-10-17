@@ -1,0 +1,12 @@
+CPU = avr32
+CPU_MODEL = at32uc3a0512
+
+# Put defined MCU peripherals here (in alphabetical order)
+#~ FEATURES_PROVIDED += adc
+#~ FEATURES_PROVIDED += i2c
+#~ FEATURES_PROVIDED += pwm
+#~ FEATURES_PROVIDED += spi
+#~ FEATURES_PROVIDED += usart
+
+TARGET_ARCH = avr32
+

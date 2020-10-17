@@ -360,7 +360,7 @@ static inline unsigned short __builtin_bswap16(unsigned short a)
 
 static inline uint16_t byteorder_swaps(uint16_t v)
 {
-#ifndef MODULE_MSP430_COMMON
+#if (!defined (MODULE_MSP430_COMMON) && !defined (CPU_AVR32))
     return __builtin_bswap16(v);
 #else
     network_uint16_t result = { v };

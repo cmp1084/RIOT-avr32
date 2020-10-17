@@ -1,0 +1,22 @@
+/**
+ * @defgroup    boards_mizar32 Mizar32
+ * @ingroup     boards
+ * @brief       Support for the Mizar32 board.
+ *
+ * ### General information
+ * 32-bit, 512 kB flash, 64 kB SRAM, 32MB External RAM, open hardware,
+ * open source development platform
+ *
+ * Some general information about the board
+ * See:
+ * https://simplemachines.it/index.php/historical-projects/mizar-project
+ *
+ * ### Pinout
+ *
+ * A detailed description of the board pinout (if available)
+ *
+ * ### Flash the board
+ *
+ * Some notes about how to flash the board
+ *
+ */
