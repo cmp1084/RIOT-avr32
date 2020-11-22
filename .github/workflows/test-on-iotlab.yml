@@ -9,8 +9,8 @@ name: test-on-iotlab
 
 on:
   # Schedule weekly runs on Monday at 00:00 on master
-  schedule:
-    - cron: '00 0 * * 1'
+#  schedule:
+#    - cron: '00 0 * * 1'
   push:
     # Run on all new releases and release candidates tags
     tags:

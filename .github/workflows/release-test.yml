@@ -12,8 +12,8 @@ name: release-tests
 # dispatch.
 
 on:
-  schedule:
-    - cron: '0 3 * * 6'
+#  schedule:
+#    - cron: '0 3 * * 6'
   push:
     # Run on all new release candidates and release tags
     tags:
